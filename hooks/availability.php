@@ -73,7 +73,7 @@
 	function availability_before_insert(&$data, $memberInfo, &$args){
 		$currentuser=($memberInfo['username']);
 		$countrecords=sqlValue("SELECT * FROM membership_userrecords WHERE tableName='availability' AND memberID='$currentuser'");
-		if ($countrecords>0) {
+		if ($countrecords>1) {
 			# code...
 			$_SESSION['custom_err_msg']="<b>Sorry Record Not Saved,You are only limited to one record in each table.(TRIAL VERSION)</b>";
 			return FALSE;
