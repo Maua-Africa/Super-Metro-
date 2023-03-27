@@ -1,5 +1,5 @@
 <?php
-	$app_name = 'SUPER METRO BOOKING SYSTEM';
+	$app_name = 'METRO TRANS BOOKING SYSTEM';
 	$currDir = dirname(__FILE__);
 	include("{$currDir}/defaultLang.php");
 	include("{$currDir}/language.php");
